@@ -1,0 +1,30 @@
+{
+    "name": "expanding-awareness",
+    "description": "Official theme for the Expanding Awareness website",
+    "version": "1.0.0",
+    "engines": {
+        "ghost-api": "v3"
+    },
+    "scripts": {
+        "test": "gscan ."
+    },
+    "author": {
+        "name": "Sashin",
+        "email": "hello@sashinexists.com",
+        "url": "https://sashinexists.com"
+    },
+    "gpm": {
+        "type": "theme",
+        "categories": [
+            "Minimal",
+            "Magazine"
+        ]
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/sashinexists/conversation-culture-theme"
+    },
+    "config": {
+        "posts_per_page": 25
+    }
+}

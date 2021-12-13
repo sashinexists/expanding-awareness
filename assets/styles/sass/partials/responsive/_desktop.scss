@@ -1,0 +1,9 @@
+.desktop-only {
+    visibility: visible;
+    display: inherit;
+}
+
+.mobile-only {
+    visibility: hidden;
+    display: none;
+}

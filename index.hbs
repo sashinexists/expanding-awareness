@@ -1,0 +1,20 @@
+{{!< default}} {{> main-banner}}
+    {{#get "posts" include="authors" filter="featured:true" limit="1"}}
+    {{#if posts}}
+    {{#foreach posts}}
+    {{> featured-card}}
+    {{/foreach}}
+    {{/if}}
+    {{/get}}
+
+    {{#get "posts" include="tags,authors" filter="tags:-[event]+featured:false" limit="all"}}
+    {{#if posts}}
+    <div class="card-grid">
+    {{#foreach posts}}
+    {{> card}}
+    {{/foreach}}
+    </div>
+    {{/if}}
+    {{/get}}
+
+<script type="text/javascript" src="{{asset "js/home.js"}}"></script>

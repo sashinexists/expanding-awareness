@@ -1,0 +1,28 @@
+.footer-button {
+    padding: 0 1rem;
+    background: transparentize($cultured-white, 0.3);
+    color: $raisin-black;
+    position: fixed;
+    bottom: 1rem;
+    border-radius: 1rem;
+    cursor: pointer;
+    text-decoration: none;
+    transition: .3s;
+    height: 4rem;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-items: space-between;
+}
+
+.back-to-top-button {
+    right: 1rem;
+    border: none;
+    height: 3.5rem;
+    width: 3.5rem;
+    opacity: .3;
+    display: block;
+    &:hover {
+        background: $cultured-white;
+    }
+}

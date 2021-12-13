@@ -1,0 +1,17 @@
+<banner class="banner"
+    style="background:url(    {{#if feature_image}}{{feature_image}}{{else}}{{@site.cover_image}}{{/if}});background-size:cover;background-position:50%;">
+    
+</banner>
+
+<div class="banner-items">
+    <h2 class="banner-title">{{title}}</h2>
+
+    <span class="banner-excerpt">{{excerpt}}</span>
+
+    <div class="banner-meta">
+        <span class="banner-author"><a href="{{primary_author.url}}">By {{primary_author.name}}</a><span>   |   </span><span><i class="fas fa-hourglass"></i>   {{reading_time}}</span></span>
+        
+        <time class="banner-date" datetime="{{date published_at format=" YYYY-MM-DD"}}">{{date format="Do
+            MMMM YYYY"}}</time>
+    </div>
+</div>

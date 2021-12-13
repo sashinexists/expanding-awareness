@@ -1,0 +1,25 @@
+{{!< default}} {{#author }} <banner class="banner"
+    style="background:url(    {{#if cover_image}}{{cover_image}}{{else}}{{@site.cover_image}}{{/if}});background-size:cover;background-position:50%;">
+
+    </banner>
+
+    <div class="banner-items">
+        <h2 class="banner-title">{{name}}</h2>
+        {{#if bio}}<span class="banner-excerpt">{{bio}}</span>{{/if}}
+        {{#if profile_image}}<img class="profile-image" src="{{profile_image}}" />{{/if}}
+    </div>
+    
+
+
+
+    {{/author}}
+    <div class="card-list">
+        {{#foreach posts}}
+        {{^has tag="event"}}
+        {{>featured-card}}
+        {{/has}}
+        {{/foreach}}
+    </div>
+
+
+    <script type="text/javascript" src="{{asset " js/home.js"}}"></script>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>{{meta_title}}</title>
+    <script src="https://kit.fontawesome.com/5d299ca67f.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href={{asset "styles/built/style.css" }} />
+    {{ghost_head}}
+</head>
+
+<body>
+    {{> header}}
+    {{> mobile-nav}}
+    {{{body}}}
+
+    <button class="back-to-top-button footer-button" title="Back to top"><i
+            class="back-to-top-icon fas fa-chevron-up"></i></button>
+    <script type="text/javascript" src="{{asset "js/script.js"}}"></script>
+    {{ghost_foot}}
+</body>
+
+</html>

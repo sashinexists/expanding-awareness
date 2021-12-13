@@ -1,0 +1,16 @@
+<a href="{{url}}" class="card">
+    <div class="card-copy">
+        <h6 class="card-title">{{title}}</h6>
+
+        <span class="card-excerpt">{{excerpt}}</span>
+        <div class="card-metadata">
+            <h6>By {{primary_author.name}}</h6>
+            <div class="card-author-image" style="background:url({{primary_author.profile_image}});background-size:cover;"></div>
+            <h6><i class="fas fa-hourglass"></i>   {{reading_time}}</h6>
+            <!--<time class="card-date" datetime="{{date published_at format=" YYYY-MM-DD"}}">{{date format="Do
+                MMMM YYYY"}}</time>-->
+        </div>
+    </div>
+    <div class="card-image" style="background:url({{feature_image}});background-size:cover;" />
+    </div>
+</a>
