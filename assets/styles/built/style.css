@@ -233,7 +233,7 @@ h3 {
   font-size: 2.4rem;
   font-weight: 500;
   height: 100%;
-  letter-spacing: 0.4rem;
+  letter-spacing: 0.5rem;
   font-variant: small-caps;
 }
 
@@ -258,6 +258,7 @@ h3 {
 .logo {
   text-align: center;
   display: flex;
+  width: 40rem;
   flex-flow: row nowrap;
   align-items: center;
   justify-content: center;
@@ -265,10 +266,10 @@ h3 {
   font-weight: 500;
   height: 100%;
   font-variant: small-caps;
-  letter-spacing: 0.4rem;
+  letter-spacing: 0.5rem;
 }
 .logo:hover {
-  letter-spacing: 0.5rem;
+  letter-spacing: 0.7rem;
   transition: 0.3s all;
   border-bottom: 1px solid rgba(0, 0, 0, 0.75);
 }

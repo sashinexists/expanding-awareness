@@ -1,6 +1,7 @@
 .logo {
     text-align:center;
     display: flex;
+    width: 40rem;
     flex-flow: row nowrap;
     align-items: center;
     justify-content: center;
@@ -8,9 +9,9 @@
     font-weight: 500;
     height: 100%;
     font-variant: small-caps;
-    letter-spacing: .4rem;
+    letter-spacing: .5rem;
     &:hover {
-        letter-spacing: .5rem;
+        letter-spacing: .7rem;
         transition: .3s all;
         border-bottom: 1px solid $border-color;
       }
