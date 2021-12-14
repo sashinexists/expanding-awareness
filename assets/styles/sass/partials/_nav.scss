@@ -1,37 +1,50 @@
 .navigation {
-    height: 100%;
-    display: flex;
-    flex-flow: row nowrap;
-    align-items: center;
-    justify-content: center;
-    font-family: $title-font;
+  height: 100%;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: center;
+  justify-content: center;
+  font-family: $title-font;
+  font-weight: normal;
+  letter-spacing: .2rem;
 }
 
 .nav {
-    list-style-type: none;
-    height: 100%;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: center;
+  list-style-type: none;
+  height: 100%;
 }
 
 .nav > li {
-    display: inline-block;
-    height: 100%;
-
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: stretch;
+  height: 100%;
+  width: 20rem;
 }
 
 .nav > li > a {
-    display: flex;
-    flex-flow: row nowrap;
-    padding: 0 2rem;
-    color: $text-color;
-    text-decoration: none;
-    height: 100%;
-    font-size: 1.2rem;
-    text-transform: uppercase;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: center;
+  padding: 0 2rem;
+  color: $text-color;
+  text-decoration: none;
+  height: 100%;
+  width: 100%;
+  font-size: 1.2rem;
+  text-transform: uppercase;
 
-}
-
-.nav > li > a > i{
-    height: 100%;
-    line-height: 5rem;
-    font-size: 1.6rem;
+  &:hover {
+    letter-spacing: .3rem;
+    transition: .3s all;
+    font-weight: bold;
+    border-bottom: 1px solid $border-color;
+  }
 }
