@@ -9,11 +9,11 @@
     height: 100%;
     font-variant: small-caps;
     letter-spacing: .4rem;
-    transition: 0.3s all;
     &:hover {
         letter-spacing: .5rem;
-        
-    }   
+        transition: .3s all;
+        border-bottom: 1px solid $border-color;
+      }
 }
 
 .logo-link {
@@ -30,5 +30,6 @@
 }
 
 .main-title {
+    text-align:center;
     font-family: $title-font;
 }
