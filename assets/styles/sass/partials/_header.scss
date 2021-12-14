@@ -5,12 +5,12 @@
     flex-flow: row nowrap;
     align-items: center;
     justify-content: space-between;
-    background: transparentize($bg-color, 0.125);
+    background: $bg-color;
     color: $text-color; 
     padding: 0 3rem;
     z-index: 1;
     position: absolute;
     top:0;
     left:0;
-    border-bottom: dotted 1px $border-color;
+    border-bottom: solid 0.025rem $border-color;
 }
