@@ -1,11 +1,10 @@
-{{!< default}} 
-    <h1>Notes</h1>
+{{!< default}} <h1>Notes</h1>
     {{#get "posts" include="tags,authors" filter="tags:note" limit="all"}}
     {{#if posts}}
-    <div  class="blog-roll">
-    {{#foreach posts}}
-    {{> card}}
-    {{/foreach}}
+    <div class="blog-roll">
+        {{#foreach posts}}
+        {{> post-preview-card}}
+        {{/foreach}}
     </div>
     {{/if}}
     {{/get}}
