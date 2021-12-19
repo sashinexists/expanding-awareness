@@ -1,0 +1,12 @@
+{{!< default}} <div class="content-card page-card">
+    <h1>Essays</h1>
+    {{#get "posts" include="tags,authors" limit="all"}}
+    {{#if posts}}
+    <div class="posts">
+        {{#foreach posts}}
+        {{> post-preview-card}}
+        {{/foreach}}
+    </div>
+    {{/if}}
+    {{/get}}
+    </div>

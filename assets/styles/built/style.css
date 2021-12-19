@@ -237,6 +237,17 @@ h3 {
   font-variant: small-caps;
 }
 
+h1 {
+  font-family: "Raleway";
+  font-size: 3.6rem;
+  font-weight: 500;
+  height: 100%;
+  letter-spacing: 0.5rem;
+  font-variant: small-caps;
+  margin-top: 1rem;
+  margin-bottom: 4rem;
+}
+
 .header {
   width: 100%;
   max-width: 100%;
@@ -267,6 +278,8 @@ h3 {
   height: 100%;
   font-variant: small-caps;
   letter-spacing: 0.5rem;
+  margin: 0;
+  transition: 0.3s all;
 }
 .logo:hover {
   letter-spacing: 0.7rem;
@@ -333,6 +346,7 @@ h3 {
   width: 100%;
   font-size: 1.2rem;
   text-transform: uppercase;
+  transition: 0.3s all;
 }
 .nav > li > a:hover {
   letter-spacing: 0.3rem;
@@ -384,6 +398,25 @@ h3 {
 }
 .back-to-top-button:hover {
   background: #F6F4F5;
+}
+
+a.post-preview-card {
+  padding: 3rem;
+  border-radius: 1rem;
+  margin-bottom: 6rem;
+  color: black;
+  display: block;
+  transition: all 0.3s;
+}
+a.post-preview-card .post-preview-card-title {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+a.post-preview-card:hover {
+  background: rgba(0, 0, 0, 0.1);
+  text-decoration: none;
+  color: black;
+  transition: all 0.3s;
 }
 
 .desktop-only {

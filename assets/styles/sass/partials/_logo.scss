@@ -10,6 +10,9 @@
     height: 100%;
     font-variant: small-caps;
     letter-spacing: .5rem;
+    margin: 0;
+    transition: .3s all;
+
     &:hover {
         letter-spacing: .7rem;
         transition: .3s all;

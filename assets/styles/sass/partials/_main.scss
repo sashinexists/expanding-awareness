@@ -62,3 +62,14 @@ h3 {
   letter-spacing: 0.5rem;
   font-variant: small-caps;
 }
+
+h1 {
+  font-family: $title-font;
+  font-size: 3.6rem;
+  font-weight: 500;
+  height: 100%;
+  letter-spacing: 0.5rem;
+  font-variant: small-caps;
+  margin-top:1rem;
+  margin-bottom:4rem;
+}

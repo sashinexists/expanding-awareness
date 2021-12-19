@@ -1,0 +1,20 @@
+a.post-preview-card {
+    padding:3rem;
+    border-radius: 1rem;
+    margin-bottom: 6rem;
+    color: black;
+    display: block;
+    .post-preview-card-title {
+        font-size: 2rem;
+        margin-bottom:1rem;
+    }
+    transition:  all .3s;
+
+    &:hover {
+        background: transparentize(#000, .9);
+        text-decoration: none;
+        color: black;
+        transition:  all .3s;
+    }
+}
+
