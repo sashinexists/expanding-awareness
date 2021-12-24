@@ -400,25 +400,6 @@ h1 {
   background: #F6F4F5;
 }
 
-/*a.post-preview-card {
-    padding:3rem;
-    border-radius: 1rem;
-    margin-bottom: 6rem;
-    color: black;
-    display: block;
-    .post-preview-card-title {
-        font-size: 2rem;
-        margin-bottom:1rem;
-    }
-    transition:  all .3s;
-
-    &:hover {
-        background: transparentize(#000, .9);
-        text-decoration: none;
-        color: black;
-        transition:  all .3s;
-    }
-}*/
 a.post-preview-card {
   padding: 3rem;
   margin-bottom: 6rem;
@@ -430,17 +411,27 @@ a.post-preview-card {
 a.post-preview-card .post-preview-card_copy {
   padding-bottom: 2rem;
   border-bottom: solid 0.025rem rgba(0, 0, 0, 0.75);
+  /*.post-preview-card_copy_excerpt {
+
+  }*/
 }
 a.post-preview-card .post-preview-card_copy .post-preview-card_copy_title {
-  font-size: 2rem;
+  font-size: 5rem;
   margin-bottom: 1rem;
+  text-align: center;
+  font-family: "Raleway";
+  font-weight: 300;
+  font-variant: small-caps;
+  line-height: 7rem;
+  letter-spacing: 0.4rem;
 }
 a.post-preview-card .post-preview-card_metadata {
   display: flex;
   flex-flow: row nowrap;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   height: 5rem;
+  width: 100%;
 }
 a.post-preview-card .post-preview-card_metadata button.post-preview-card_metadata_read-more {
   border: none;
@@ -449,7 +440,36 @@ a.post-preview-card .post-preview-card_metadata button.post-preview-card_metadat
   cursor: pointer;
   font-variant: small-caps;
   font-size: 2rem;
-  line-height: 3rem;
+  line-height: 5rem;
+  height: 100%;
+  letter-spacing: 0.4rem;
+  transition: all 0.6s;
+}
+a.post-preview-card .post-preview-card_metadata .post-preview-card_metadata_author {
+  border: none;
+  background: none;
+  font-family: "Raleway";
+  cursor: pointer;
+  font-variant: small-caps;
+  font-size: 2rem;
+  line-height: 5rem;
+  height: 100%;
+  letter-spacing: 0.4rem;
+  transition: all 0.6s;
+}
+a.post-preview-card .post-preview-card_metadata .post-preview-card_metadata_author a {
+  display: block;
+  text-decoration: none;
+}
+a.post-preview-card .post-preview-card_metadata .post-preview-card_metadata_reading-time {
+  display: block;
+  border: none;
+  background: none;
+  font-family: "Raleway";
+  cursor: pointer;
+  font-variant: small-caps;
+  font-size: 2rem;
+  line-height: 5rem;
   height: 100%;
   letter-spacing: 0.4rem;
   transition: all 0.6s;

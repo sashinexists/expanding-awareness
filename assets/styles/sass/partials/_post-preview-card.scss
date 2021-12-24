@@ -11,21 +11,27 @@ a.post-preview-card {
         border-bottom: solid 0.025rem $border-color;
 
         .post-preview-card_copy_title {
-            font-size: 2rem;
+            font-size: 5rem;
             margin-bottom:1rem;
+            text-align: center;
+            font-family: $title-font;
+            font-weight: 300;
+            font-variant: small-caps;
+            line-height: 7rem;
+            letter-spacing: .4rem;
         }
         /*.post-preview-card_copy_excerpt {
             
         }*/
     }
 
-    .post-preview-card_metadata {
+    .post-preview-card_metadata{
         display: flex;
         flex-flow: row nowrap;
         align-items: center;
-        justify-content: center;
+        justify-content:space-between;
         height: 5rem;
-
+        width: 100%;
         button.post-preview-card_metadata_read-more {
             border: none;
             background: none;
@@ -33,7 +39,38 @@ a.post-preview-card {
             cursor: pointer;
             font-variant: small-caps;
             font-size: 2rem;
-            line-height: 3rem;
+            line-height: 5rem;
+            height: 100%;
+            letter-spacing: .4rem;
+            transition:  all .6s;
+        }
+
+        .post-preview-card_metadata_author {
+            border: none;
+            background: none;
+            font-family: $title-font;
+            cursor: pointer;
+            font-variant: small-caps;
+            font-size: 2rem;
+            line-height: 5rem;
+            height: 100%;
+            letter-spacing: .4rem;
+            transition:  all .6s;
+            a {
+                display: block;
+                text-decoration: none;
+            }
+        }
+
+        .post-preview-card_metadata_reading-time {
+            display: block;
+            border: none;
+            background: none;
+            font-family: $title-font;
+            cursor: pointer;
+            font-variant: small-caps;
+            font-size: 2rem;
+            line-height: 5rem;
             height: 100%;
             letter-spacing: .4rem;
             transition:  all .6s;
