@@ -1,5 +1,5 @@
 html {
-  font-size: 10px;
+  font-size: $rem-size;
 }
 
 * {
@@ -13,8 +13,8 @@ html {
 
 body {
   font-family: $main-font;
-  line-height: 3rem;
-  font-size: 1.8rem;
+  line-height: $default-line-height;
+  font-size: $main-font-size;
   font-weight: normal;
   text-align: justify;
   display: flex;
@@ -56,19 +56,19 @@ body {
 
 h3 {
   font-family: $title-font;
-  font-size: 2.4rem;
+  font-size: $h3-font-size;
   font-weight: 500;
   height: 100%;
-  letter-spacing: 0.5rem;
+  letter-spacing: $title-letter-spacing;
   font-variant: small-caps;
 }
 
 h1 {
   font-family: $title-font;
-  font-size: 3.6rem;
+  font-size: $h1-font-size;
   font-weight: 500;
   height: 100%;
-  letter-spacing: 0.5rem;
+  letter-spacing: $title-letter-spacing;
   font-variant: small-caps;
   margin-top:1rem;
   margin-bottom:4rem;
