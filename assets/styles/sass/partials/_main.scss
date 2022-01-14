@@ -43,7 +43,6 @@ body {
 .page-title {
   @include titleStyles();
   font-size: $page-title-font-size;
-  border-bottom: .1rem solid black;
 }
 
 h3 {
