@@ -11,7 +11,7 @@ a.post-preview-card {
         border-bottom: solid 0.025rem $border-color;
 
         .post-preview-card_copy_title {
-            font-size: 5rem;
+            font-size: $card-title-font-size;
             margin-bottom:1rem;
             text-align: center;
             font-family: $title-font;
@@ -20,9 +20,6 @@ a.post-preview-card {
             line-height: 7rem;
             letter-spacing: .4rem;
         }
-        /*.post-preview-card_copy_excerpt {
-            
-        }*/
     }
 
     .post-preview-card_metadata{

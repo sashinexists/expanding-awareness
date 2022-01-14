@@ -12,16 +12,9 @@ html {
 }
 
 body {
-  font-family: $main-font;
-  line-height: $default-line-height;
-  font-size: $main-font-size;
-  font-weight: normal;
-  text-align: justify;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+ @include defaultText();
+@include column();
   background: $bg-color;
-  color: $text-color;
 
   a {
     color: $link-color;
@@ -32,16 +25,9 @@ body {
     }
   }
 
-  p {
-    margin: 3rem 0;
-  }
-
-  ul {
-    margin-left: 3rem;
-    li {
-      margin: 1.5rem;
-    }
-  }
+  
+  @include paragraphStyles();
+  @include unorderedListStyles();
 }
 
 .desktop-only {
@@ -54,22 +40,20 @@ body {
   visibility: hidden;    
 }
 
+.page-title {
+  @include titleStyles();
+  font-size: $page-title-font-size;
+  border-bottom: .1rem solid black;
+}
+
 h3 {
-  font-family: $title-font;
+  @include titleStyles();
   font-size: $h3-font-size;
-  font-weight: 500;
-  height: 100%;
-  letter-spacing: $title-letter-spacing;
-  font-variant: small-caps;
 }
 
 h1 {
-  font-family: $title-font;
+  @include titleStyles();
   font-size: $h1-font-size;
-  font-weight: 500;
-  height: 100%;
-  letter-spacing: $title-letter-spacing;
-  font-variant: small-caps;
   margin-top:1rem;
   margin-bottom:4rem;
 }
