@@ -11,4 +11,23 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    .page-title {
+
+    }
+
+    .page-metadata {
+        @include titleStyles();
+        font-size: 1.6rem;
+        font-weight: 500;
+        margin-top:3rem;
+    }
+
+    blockquote {
+        font-size: 3rem;
+        font-weight: 100;
+        line-height: 5rem;
+        padding: 2rem;
+        text-align: center;
+    }
 }

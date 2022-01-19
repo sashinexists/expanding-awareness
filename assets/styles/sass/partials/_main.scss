@@ -53,6 +53,5 @@ h3 {
 h1 {
   @include titleStyles();
   font-size: $h1-font-size;
-  margin-top:1rem;
-  margin-bottom:4rem;
+
 }
