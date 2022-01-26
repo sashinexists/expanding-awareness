@@ -410,6 +410,63 @@ h1 {
   padding: 2rem;
   text-align: center;
 }
+.content-card hr {
+  border: none;
+  text-align: center;
+  font-weight: 300;
+  margin: 4rem 0;
+}
+.content-card hr::after {
+  content: "•••";
+  text-align: center;
+  font-size: 2.4rem;
+}
+.content-card h3 {
+  font-family: "Raleway";
+  font-weight: 500;
+  height: 100%;
+  letter-spacing: 0.5rem;
+  font-variant: small-caps;
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+  font-size: 2.4rem;
+  color: #0B72A3;
+}
+.content-card h2 {
+  font-family: "Raleway";
+  font-weight: 500;
+  height: 100%;
+  letter-spacing: 0.5rem;
+  font-variant: small-caps;
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+  font-size: 2.4rem;
+  text-align: center;
+  margin-top: 6rem;
+  margin-bottom: 3rem;
+}
+.content-card h1 {
+  font-family: "Raleway";
+  font-weight: 500;
+  height: 100%;
+  letter-spacing: 0.5rem;
+  font-variant: small-caps;
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+  font-size: 3.6rem;
+  text-align: center;
+}
+.content-card .note-from-michael {
+  margin-top: 2rem;
+  margin-bottom: 6rem;
+  background-color: rgba(236, 248, 254, 0.7);
+  padding: 3rem;
+  border-radius: 1rem;
+}
+.content-card .note-from-michael h3 {
+  text-align: center;
+  font-size: 2rem;
+}
 
 .footer-button {
   padding: 0 1rem;
@@ -441,9 +498,9 @@ h1 {
 }
 
 a.post-preview-card {
-  margin: 0.5rem;
+  margin: 2rem;
   padding: 2.5rem;
-  margin-bottom: 6rem;
+  margin-bottom: 8rem;
   color: black;
   display: block;
   cursor: pointer;
