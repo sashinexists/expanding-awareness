@@ -1,80 +1,132 @@
 .content-card {
-    color: $text-color;
-    padding: 5rem;
-    border-radius: 1rem;
-    width: 100rem;
-    padding: 10rem;
-    padding-top:5rem;
-    max-width: 95vw;
+  color: $text-color;
+  padding: 5rem;
+  border-radius: 1rem;
+  width: 100rem;
+  padding: 10rem;
+  padding-top: 5rem;
+  max-width: 95vw;
+  margin-bottom: 3rem;
+  margin-top: 10rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .page-title {
+  }
+
+  .page-metadata {
+    @include titleStyles();
+    font-size: 1.6rem;
+    font-weight: 500;
+    margin-top: 3rem;
+  }
+
+  blockquote {
+    font-size: 3rem;
+    font-weight: 100;
+    line-height: 5rem;
+    padding: 2rem;
+    text-align: center;
+  }
+
+  hr {
+    border: none;
+    text-align: center;
+    font-weight: 300;
+    margin: 4rem 0;
+
+    &::after {
+      content: "\2022 \2022 \2022";
+      text-align: center;
+      font-size: $h3-font-size;
+    }
+  }
+
+  h3 {
+    @include titleStyles();
+    font-size: $h3-font-size;
+    color: $link-color;
+  }
+
+  h2 {
+    @include titleStyles();
+    font-size: $h3-font-size;
+    text-align: center;
+    margin-top: 6rem;
     margin-bottom: 3rem;
-    margin-top: 10rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  }
 
-    .page-title {
+  h1 {
+    @include titleStyles();
+    font-size: $h1-font-size;
+    text-align: center;
+  }
 
-    }
-
-    .page-metadata {
-        @include titleStyles();
-        font-size: 1.6rem;
-        font-weight: 500;
-        margin-top:3rem;
-    }
-
-    blockquote {
-        font-size: 3rem;
-        font-weight: 100;
-        line-height: 5rem;
-        padding: 2rem;
-        text-align: center;
-    }
-
-    hr {
-        border: none;
-        text-align: center;
-        font-weight: 300;
-        margin: 4rem 0;
-
-        &::after {
-            content: "\2022 \2022 \2022";
-            text-align: center;
-            font-size: $h3-font-size;
-        }
-    }
-
+  .note-from-michael {
     h3 {
-        @include titleStyles();
-        font-size: $h3-font-size;
-        color: $link-color;
-      }
+      text-align: center;
+      font-size: 2rem;
+      color: $snippet-title-colour;
+      font-weight: bold;
+    }
+    margin-top: 2rem;
+    margin-bottom: 6rem;
+    background-color: $snippet-bg-colour;
+    padding: 3rem;
+    border-radius: 1rem;
+  }
 
-      h2 {
-        @include titleStyles();
-        font-size: $h3-font-size;
-        text-align: center;
-        margin-top: 6rem;
-        margin-bottom: 3rem;
+  .recommended-snippet {
+    h3.recommended-snippet_title {
+      text-align: center;
+      font-size: 2rem;
+      color: $recommended-snippet-title-colour;
+      font-weight: bold;
+    }
+    margin-top: 6rem;
+    background-color: $recommended-snippet-bg-colour;
+    padding: 3rem;
+    border-radius: 1rem;
+  }
 
-      }
-      
-      h1 {
-        @include titleStyles();
-        font-size: $h1-font-size;
-        text-align: center;
-      }
+  blockquote.quote-snippet {
+    span.quote-snippet_content {
+      font-size: 3rem;
+      font-weight: 100;
+      line-height: 4rem;
+      padding: 2rem;
+      text-align: center;
+    }
+    span.quote-snippet_author {
+      font-size: 2rem;
+      font-weight: bold;
+      line-height: 2rem;
+    }
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 5rem;
+  }
 
-      .note-from-michael {
-        h3 {
-            text-align: center;
-            font-size: 2rem;
-        }
-        margin-top:2rem;
-        margin-bottom: 6rem;
-        background-color: $snippet-bg-colour;
-        padding:3rem;
-        border-radius: 1rem;
-      }
-
+  blockquote.quote-snippet-long {
+    span.quote-snippet-long_content {
+      font-size: 2.4rem;
+      font-weight: 100;
+      line-height: 4rem;
+      padding: 2rem;
+      text-align: justify;
+    }
+    span.quote-snippet-long_author {
+      font-size: 2rem;
+      font-weight: bold;
+      line-height: 2rem;
+    }
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 5rem;
+  }
 }

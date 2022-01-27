@@ -20,7 +20,7 @@ article img {
   text-align: center;
   font-family: "Raleway";
   font-variant: small-caps;
-  font-size: 1.4rem;
+  font-size: 1.8rem;
   margin: 3rem;
   padding-bottom: 1.5rem;
   border-bottom: solid 0.025rem rgba(0, 0, 0, 0.75);
@@ -30,6 +30,10 @@ article img {
 .kg-card img {
   max-height: 30rem;
   max-width: 100%;
+}
+.kg-card iframe {
+  height: 40rem;
+  width: 100%;
 }
 
 .kg-width-wide {
@@ -459,13 +463,65 @@ h1 {
 .content-card .note-from-michael {
   margin-top: 2rem;
   margin-bottom: 6rem;
-  background-color: rgba(236, 248, 254, 0.7);
+  background-color: rgba(252, 230, 218, 0.7);
   padding: 3rem;
   border-radius: 1rem;
 }
 .content-card .note-from-michael h3 {
   text-align: center;
   font-size: 2rem;
+  color: #aa440e;
+  font-weight: bold;
+}
+.content-card .recommended-snippet {
+  margin-top: 6rem;
+  background-color: rgba(236, 248, 254, 0.7);
+  padding: 3rem;
+  border-radius: 1rem;
+}
+.content-card .recommended-snippet h3.recommended-snippet_title {
+  text-align: center;
+  font-size: 2rem;
+  color: #0B72A3;
+  font-weight: bold;
+}
+.content-card blockquote.quote-snippet {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: space-around;
+  margin-bottom: 5rem;
+}
+.content-card blockquote.quote-snippet span.quote-snippet_content {
+  font-size: 3rem;
+  font-weight: 100;
+  line-height: 4rem;
+  padding: 2rem;
+  text-align: center;
+}
+.content-card blockquote.quote-snippet span.quote-snippet_author {
+  font-size: 2rem;
+  font-weight: bold;
+  line-height: 2rem;
+}
+.content-card blockquote.quote-snippet-long {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: space-around;
+  margin-bottom: 5rem;
+}
+.content-card blockquote.quote-snippet-long span.quote-snippet-long_content {
+  font-size: 2.4rem;
+  font-weight: 100;
+  line-height: 4rem;
+  padding: 2rem;
+  text-align: justify;
+}
+.content-card blockquote.quote-snippet-long span.quote-snippet-long_author {
+  font-size: 2rem;
+  font-weight: bold;
+  line-height: 2rem;
 }
 
 .footer-button {
