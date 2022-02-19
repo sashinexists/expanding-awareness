@@ -4,8 +4,25 @@ a.post-preview-card {
     margin-bottom: 8rem;
     color: black;
     display: block;
+    border-radius: 1rem;
     cursor:pointer;
     transition:  all .6s;
+
+    .post-preview-card_image {
+        height: 15rem;
+        width: 70rem;
+        max-width: 100%;
+        max-height: 100%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        border-radius: 1rem;
+        margin: 1rem 0 2.5rem 0;
+        display: flex;
+        flex-flow: column nowrap;
+        transition: 0.3s;
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+          rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+      }
 
     .post-preview-card_copy {
         padding-bottom: 2rem;
@@ -79,8 +96,9 @@ a.post-preview-card {
         text-decoration: none;
         color: black;
         transition:  all .6s;
-        background: transparentize($wave-blue, .85);
-
+        background: transparentize($raisin-black, .95);
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+        rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
         button.post-preview-card_metadata_read-more {
             letter-spacing: .7rem;
             transition:  all .6s;

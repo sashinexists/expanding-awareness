@@ -19,7 +19,7 @@
     @include titleStyles();
     font-size: 1.6rem;
     font-weight: 500;
-    margin-top: 3rem;
+    margin-top: 1.5rem;
   }
 
   blockquote {
@@ -91,23 +91,30 @@
   }
 
   blockquote.quote-snippet {
-    span.quote-snippet_content {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: baseline;
+    justify-content: left;
+    border-left: 2px solid black;
+    text-align: left;
+    margin-left: 5rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+
+    &:before {
+      content: "❝";
       font-size: 3rem;
-      font-weight: 100;
-      line-height: 4rem;
-      padding: 2rem;
-      text-align: center;
+      font-family: Georgia, "Times New Roman", Times, serif;
+      text-align: left;
+      display: block;
+    }
+
+    span.quote-snippet_content {
     }
     span.quote-snippet_author {
       font-size: 2rem;
       font-weight: bold;
-      line-height: 2rem;
     }
-    display: flex;
-    flex-flow: column nowrap;
-    align-items: center;
-    justify-content: space-around;
-    margin-bottom: 5rem;
   }
 
   blockquote.quote-snippet-long {
@@ -128,5 +135,21 @@
     align-items: center;
     justify-content: space-around;
     margin-bottom: 5rem;
+  }
+
+  .post-image {
+    height: 20rem;
+    width: 70rem;
+    max-width: 100%;
+    max-height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 1rem;
+    margin: 2.5rem 0 3rem 0;
+    display: flex;
+    flex-flow: column nowrap;
+    transition: 0.3s;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+      rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
   }
 }

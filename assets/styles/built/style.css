@@ -18,12 +18,10 @@ article img {
 
 .kg-card {
   text-align: center;
-  font-family: "Raleway";
-  font-variant: small-caps;
-  font-size: 1.8rem;
+  font-family: "Hind Madurai", sans-serif;
+  font-size: 1.6rem;
   margin: 3rem;
   padding-bottom: 1.5rem;
-  border-bottom: solid 0.025rem rgba(0, 0, 0, 0.75);
   margin-bottom: 5rem;
   max-width: 100%;
 }
@@ -104,54 +102,56 @@ footer {
 .kg-bookmark-card {
   width: 100%;
   position: relative;
+  border: none;
+}
+.kg-bookmark-card a {
+  color: black;
 }
 
 .kg-bookmark-container {
   display: flex;
-  flex-wrap: wrap;
-  flex-direction: row-reverse;
-  color: currentColor;
-  font-family: inherit;
-  text-decoration: none;
-  border: 1px solid rgba(0, 0, 0, 0.1);
+  flex-flow: row nowrap;
+  margin: 2rem;
+  padding: 2.5rem;
+  margin-bottom: 8rem;
 }
 
 .kg-bookmark-container:hover {
   text-decoration: none;
+  color: black;
+  background: rgba(11, 114, 163, 0.15);
 }
 
 .kg-bookmark-content {
-  flex-basis: 0;
-  flex-grow: 999;
-  padding: 20px;
-  order: 1;
+  width: 100%;
 }
 
 .kg-bookmark-title {
-  font-weight: 600;
-}
-
-.kg-bookmark-metadata,
-.kg-bookmark-description {
-  margin-top: 0.5em;
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+  text-align: center;
+  font-family: "Raleway";
+  font-weight: 300;
+  font-variant: small-caps;
+  line-height: 4rem;
+  letter-spacing: 0.4rem;
 }
 
 .kg-bookmark-metadata {
-  align-items: center;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
+  display: hide;
+  height: 0;
 }
 
 .kg-bookmark-description {
-  display: -webkit-box;
-  -webkit-box-orient: vertical;
-  -webkit-line-clamp: 2;
-  overflow: hidden;
+  text-align: justify;
+  font-family: "Hind Madurai", sans-serif;
+  font-variant: normal;
+  padding-bottom: 2rem;
+  border-bottom: solid 0.025rem rgba(0, 0, 0, 0.75);
 }
 
 .kg-bookmark-icon {
-  display: inline-block;
+  display: hide;
   width: 1em;
   height: 1em;
   vertical-align: text-bottom;
@@ -160,9 +160,8 @@ footer {
 }
 
 .kg-bookmark-thumbnail {
-  display: flex;
-  flex-basis: 24rem;
-  flex-grow: 1;
+  display: hide;
+  width: 0%;
 }
 
 .kg-bookmark-thumbnail img {
@@ -170,6 +169,7 @@ footer {
   height: auto;
   vertical-align: bottom;
   object-fit: cover;
+  display: hide;
 }
 
 .kg-bookmark-author {
@@ -405,7 +405,7 @@ h1 {
   margin-bottom: 1rem;
   font-size: 1.6rem;
   font-weight: 500;
-  margin-top: 3rem;
+  margin-top: 1.5rem;
 }
 .content-card blockquote {
   font-size: 3rem;
@@ -463,46 +463,49 @@ h1 {
 .content-card .note-from-michael {
   margin-top: 2rem;
   margin-bottom: 6rem;
-  background-color: rgba(252, 230, 218, 0.7);
+  background-color: rgba(236, 248, 254, 0.7);
   padding: 3rem;
   border-radius: 1rem;
 }
 .content-card .note-from-michael h3 {
   text-align: center;
   font-size: 2rem;
-  color: #aa440e;
+  color: #0B72A3;
   font-weight: bold;
 }
 .content-card .recommended-snippet {
   margin-top: 6rem;
-  background-color: rgba(236, 248, 254, 0.7);
+  background-color: rgba(252, 230, 218, 0.7);
   padding: 3rem;
   border-radius: 1rem;
 }
 .content-card .recommended-snippet h3.recommended-snippet_title {
   text-align: center;
   font-size: 2rem;
-  color: #0B72A3;
+  color: #aa440e;
   font-weight: bold;
 }
 .content-card blockquote.quote-snippet {
   display: flex;
   flex-flow: column nowrap;
-  align-items: center;
-  justify-content: space-around;
-  margin-bottom: 5rem;
+  align-items: baseline;
+  justify-content: left;
+  border-left: 2px solid black;
+  text-align: left;
+  margin-left: 5rem;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
 }
-.content-card blockquote.quote-snippet span.quote-snippet_content {
+.content-card blockquote.quote-snippet:before {
+  content: "❝";
   font-size: 3rem;
-  font-weight: 100;
-  line-height: 4rem;
-  padding: 2rem;
-  text-align: center;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  text-align: left;
+  display: block;
 }
 .content-card blockquote.quote-snippet span.quote-snippet_author {
   font-size: 2rem;
   font-weight: bold;
-  line-height: 2rem;
 }
 .content-card blockquote.quote-snippet-long {
   display: flex;
@@ -522,6 +525,20 @@ h1 {
   font-size: 2rem;
   font-weight: bold;
   line-height: 2rem;
+}
+.content-card .post-image {
+  height: 20rem;
+  width: 70rem;
+  max-width: 100%;
+  max-height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 1rem;
+  margin: 2.5rem 0 3rem 0;
+  display: flex;
+  flex-flow: column nowrap;
+  transition: 0.3s;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
 }
 
 .footer-button {
@@ -559,8 +576,23 @@ a.post-preview-card {
   margin-bottom: 8rem;
   color: black;
   display: block;
+  border-radius: 1rem;
   cursor: pointer;
   transition: all 0.6s;
+}
+a.post-preview-card .post-preview-card_image {
+  height: 15rem;
+  width: 70rem;
+  max-width: 100%;
+  max-height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 1rem;
+  margin: 1rem 0 2.5rem 0;
+  display: flex;
+  flex-flow: column nowrap;
+  transition: 0.3s;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
 }
 a.post-preview-card .post-preview-card_copy {
   padding-bottom: 2rem;
@@ -629,7 +661,8 @@ a.post-preview-card:hover {
   text-decoration: none;
   color: black;
   transition: all 0.6s;
-  background: rgba(11, 114, 163, 0.15);
+  background: rgba(34, 27, 31, 0.05);
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
 }
 a.post-preview-card:hover button.post-preview-card_metadata_read-more {
   letter-spacing: 0.7rem;

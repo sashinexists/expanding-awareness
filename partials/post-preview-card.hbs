@@ -1,6 +1,10 @@
 <a href="{{url}}" class="post-preview-card">
     <div class="post-preview-card_copy">
         <h6 class="post-preview-card_copy_title card-title">{{title}}</h6>
+        {{#if feature_image}}
+    <figure class="post-preview-card_image" style="background-image: url({{feature_image}})">
+    </figure>
+    {{/if}}
         <span class="post-preview-card_copy_excerpt">{{excerpt}}...</span>
     </div>
     <div class="post-preview-card_metadata">

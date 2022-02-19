@@ -8,10 +8,10 @@ $link-color: $wave-blue;
 $link-hover-color: $blue-ncs;
 $bg-color:  white;
 $content-bg-color: white;
-$snippet-title-colour: $rust;
-$snippet-bg-colour: transparentize($champagne-pink, .3);
-$recommended-snippet-title-colour: $wave-blue;
-$recommended-snippet-bg-colour: transparentize($alice-blue, .3);
+$snippet-title-colour:$wave-blue; 
+$snippet-bg-colour:transparentize($alice-blue, .3) ;
+$recommended-snippet-title-colour: $rust;
+$recommended-snippet-bg-colour: transparentize($champagne-pink, .3);
 $tab-hover: $indigo-dye;
 $border-color:  rgba(0,0,0, .75);
 
