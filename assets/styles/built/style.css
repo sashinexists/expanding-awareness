@@ -581,16 +581,19 @@ a.post-preview-card {
   transition: all 0.6s;
 }
 a.post-preview-card .post-preview-card_image {
-  height: 20rem;
-  width: 70rem;
+  height: 18rem;
+  width: 63rem;
   max-width: 100%;
   max-height: 100%;
   background-size: cover;
   background-repeat: no-repeat;
   border-radius: 1rem;
-  margin: 1rem 0 2.5rem 0;
+  margin: 1rem auto 2.5rem auto;
   display: flex;
   flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
   transition: 0.3s;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
 }
