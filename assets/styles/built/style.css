@@ -526,7 +526,7 @@ h1 {
   font-weight: bold;
   line-height: 2rem;
 }
-.content-card .post-image {
+.content-card .post-image, .content-card .page-image {
   height: 20rem;
   width: 70rem;
   max-width: 100%;
@@ -539,6 +539,10 @@ h1 {
   flex-flow: column nowrap;
   transition: 0.3s;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+.content-card .page-image {
+  height: 30rem;
+  width: 70rem;
 }
 
 .footer-button {

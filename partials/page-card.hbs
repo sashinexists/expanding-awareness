@@ -1,8 +1,12 @@
 <div class="content-card page-card">
-    <h1 class="page-title">{{title}}</h1>
-     <div class="page-metadata">
-            <!--<time class="card-date" datetime="{{date published_at format=" YYYY-MM-DD"}}">{{date format="Do
+  <h1 class="page-title">{{title}}</h1>
+  <div class="page-metadata">
+    <!--<time class="card-date" datetime="{{date published_at format=" YYYY-MM-DD"}}">{{date format="Do
                 MMMM YYYY"}}</time>-->
-        </div>
-    <div>{{content}}</div>
+  </div>
+  {{#if feature_image}}
+    <figure class="page-image" style="background-image: url({{feature_image}})">
+    </figure>
+  {{/if}}
+  <div>{{content}}</div>
 </div>
