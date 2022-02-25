@@ -1,13 +1,12 @@
 a.post-preview-card {
-    margin:2rem;
-    padding:2.5rem;
-    margin-bottom: 8rem;
+    margin:0rem;
+    padding:3rem;
+    margin-bottom: 10rem;
     color: black;
     display: block;
     border-radius: 1rem;
     cursor:pointer;
     transition:  all .6s;
-
     .post-preview-card_image {
         height: 18rem;
         width: 63rem;
@@ -99,12 +98,13 @@ a.post-preview-card {
         text-decoration: none;
         color: black;
         transition:  all .6s;
-        background: transparentize($raisin-black, .95);
-        box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
-        rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+        box-shadow: rgba(0, 0, 0, 0.125) 0px 25px 50px -12px;
         button.post-preview-card_metadata_read-more {
             letter-spacing: .7rem;
             transition:  all .6s;
+            &:hover {
+                color: $link-hover-color;
+            }
 
         }
     }

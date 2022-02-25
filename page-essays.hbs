@@ -1,5 +1,10 @@
-{{!< default}} <div class="content-card page-card">
+{{!< default}} 
+<div class="content-card page-card">
     <h1 class="page-title">Essays</h1>
+        {{#post}}
+    <div class="text-align-center">{{content}}</div>
+    <hr/>
+    {{/post}}
     {{#get "posts" include="tags,authors" limit="all"}}
     {{#if posts}}
     <div class="posts">
@@ -9,4 +14,4 @@
     </div>
     {{/if}}
     {{/get}}
-    </div>
+</div>
