@@ -25,9 +25,12 @@ body {
     }
   }
 
+  .text-align-center {
+    text-align: center;
+  }
   
   @include paragraphStyles();
-  @include unorderedListStyles();
+  @include listStyles();
 }
 
 .desktop-only {

@@ -220,13 +220,16 @@ body a:hover {
   color: #0F94D2;
   text-decoration: underline;
 }
+body .text-align-center {
+  text-align: center;
+}
 body p {
   margin: 3rem 0;
 }
-body ul {
+body ul, body ol {
   margin-left: 3rem;
 }
-body ul li {
+body ul li, body ol li {
   margin: 1.5rem;
 }
 
