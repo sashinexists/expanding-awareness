@@ -9,7 +9,7 @@ $link-hover-color: $blue-ncs;
 $bg-color:  white;
 $content-bg-color: white;
 $snippet-title-colour:$wave-blue; 
-$snippet-bg-colour:transparentize($alice-blue, .3) ;
+$snippet-bg-colour:rgb(248,248,255) ;
 $recommended-snippet-title-colour: $rust;
 $recommended-snippet-bg-colour: transparentize($champagne-pink, .3);
 $tab-hover: $indigo-dye;
@@ -27,6 +27,7 @@ $card-title-font-size: 3rem;
 
 $main-font-size: 2rem;
 $h1-font-size: 3.6rem;
+$h2-font-size: 3rem;
 $h3-font-size: 2.4rem;
 
 //more
