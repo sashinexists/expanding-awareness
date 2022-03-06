@@ -1,19 +1,88 @@
 $rem-size: 10px;
 
-//colours
+//colors
 
 $text-color: black;
 $text-color-light: $alice-blue;
 $link-color: $wave-blue;
 $link-hover-color: $blue-ncs;
-$bg-color:  white;
+$bg-color: white;
 $content-bg-color: white;
-$snippet-title-colour:$wave-blue; 
-$snippet-bg-colour:rgb(248,248,255) ;
-$recommended-snippet-title-colour: $rust;
-$recommended-snippet-bg-colour: transparentize($champagne-pink, .3);
-$tab-hover: $indigo-dye;
-$border-color:  rgba(0,0,0, .75);
+$snippet-title-color: $wave-blue;
+$snippet-bg-color: rgb(248, 248, 255);
+$snippet-bg-color-hover: rgba(248, 248, 255, 0.5);
+$border-color: rgba(0, 0, 0, 0.75);
+$title-color: $indigo-dye;
+
+$btn-bg-color: rgb(233, 233, 240);
+$btn-text-color: $text-color;
+$btn-hover-bg-color: rgb(233, 233, 240);
+$btn-hover-text-color: $link-hover-color;
+
+$theme-toggle-btn-bg-color: #e9e9f0;
+$theme-toggle-btn-text-color: $text-color;
+$theme-toggle-btn-hover-bg-color: $raisin-black;
+$theme-toggle-btn-hover-text-color: $cultured-white;
+
+
+
+$box-shadow-standard-color-1: rgba(0, 0, 0, 0.1);
+$box-shadow-standard-color-2: rgba(0, 0, 0, 0.06);
+$box-shadow-emphasised-color: rgba(0, 0, 0, 0.125);
+
+
+:root {
+  --text-color: #{$text-color};
+  --text-color-light: #{$alice-blue};
+  --link-color: #{$wave-blue};
+  --link-hover-color: #{$blue-ncs};
+  --title-color: #{$title-color};
+  --bg-color: #{$bg-color};
+  --content-bg-color: #{$content-bg-color};
+  --snippet-title-color: #{$wave-blue};
+  --snippet-bg-color: #{$snippet-bg-color};
+  --snippet-bg-color-hover: #{$snippet-bg-color-hover};
+  --border-color: #{$border-color};
+  --btn-bg-color: #{$btn-bg-color};
+  --btn-text-color: #{$btn-text-color};
+  --btn-hover-bg-color: #{$btn-hover-bg-color};
+  --btn-hover-text-color: #{$btn-hover-bg-color};
+  --btn-bg-color: #{$btn-bg-color};
+  --theme-toggle-btn-text-color: #{$theme-toggle-btn-text-color};
+  --theme-toggle-btn-bg-color: #{$theme-toggle-btn-bg-color};
+  --theme-toggle-btn-hover-bg-color: #{$theme-toggle-btn-hover-bg-color};
+  --theme-toggle-btn-hover-text-color: #{$theme-toggle-btn-hover-text-color};
+  --box-shadow-standard-color-1: #{$box-shadow-standard-color-1};
+  --box-shadow-standard-color-2: #{$box-shadow-standard-color-2};
+  --box-shadow-emphasised-color: #{$box-shadow-emphasised-color};
+}
+
+//change all of these so the colours aren't explicit later
+body.light-mode {
+  --text-color: #{$text-color};
+  --text-color-light: #{$alice-blue};
+  --link-color: #{$wave-blue};
+  --link-hover-color: #{$blue-ncs};
+  --title-color: #{$title-color};
+  --bg-color: #{$bg-color};
+  --content-bg-color: #{$content-bg-color};
+  --snippet-title-color: #{$wave-blue};
+  --snippet-bg-color: #{$snippet-bg-color};
+  --snippet-bg-color-hover: #{$snippet-bg-color-hover};
+  --border-color: #{$border-color};
+  --btn-bg-color: #{$btn-bg-color};
+  --btn-text-color: #{$btn-text-color};
+  --btn-hover-bg-color: #{$btn-hover-bg-color};
+  --btn-hover-text-color: #{$btn-hover-bg-color};
+  --btn-bg-color: #{$btn-bg-color};
+  --theme-toggle-btn-text-color: #{$theme-toggle-btn-text-color};
+  --theme-toggle-btn-bg-color: #{$theme-toggle-btn-bg-color};
+  --theme-toggle-btn-hover-bg-color: #{$theme-toggle-btn-hover-bg-color};
+  --theme-toggle-btn-hover-text-color: #{$theme-toggle-btn-hover-text-color};
+  --box-shadow-standard-color-1: #{$box-shadow-standard-color-1};
+  --box-shadow-standard-color-2: #{$box-shadow-standard-color-2};
+  --box-shadow-emphasised-color: #{$box-shadow-emphasised-color};
+}
 
 //font
 $main-font: "Hind Madurai", sans-serif;
@@ -24,7 +93,6 @@ $page-title-font-size: 3rem;
 $nav-bar-link-font-size: 1.3rem;
 $card-title-font-size: 3rem;
 
-
 $main-font-size: 2rem;
 $h1-font-size: 3.6rem;
 $h2-font-size: 3rem;
@@ -34,54 +102,59 @@ $h3-font-size: 2.4rem;
 $default-padding: 1rem;
 $default-margin: 1rem;
 $default-line-height: 3rem;
-$title-letter-spacing: .5rem;
+$title-letter-spacing: 0.5rem;
+
+
+@mixin box-shadow-standard {
+  box-shadow: var(--box-shadow-standard-color-1) 0px 4px 6px -1px,
+    var(--box-shadow-standard-color-2) 0px 2px 4px -1px;
+}
+
+@mixin box-shadow-emphasised {
+  box-shadow: var(--box-shadow-emphasised-color)  0px 25px 50px -12px;
+}
 
 @mixin siteTitle {
-    
 }
 
 @mixin defaultText {
-    font-family: $main-font;
-    line-height: $default-line-height;
-    font-size: $main-font-size;
-    color: $text-color;
-    font-weight: 300;
-    text-align: justify;
+  font-family: $main-font;
+  line-height: $default-line-height;
+  font-size: $main-font-size;
+  color: $text-color;
+  font-weight: 300;
+  text-align: justify;
 }
 
 @mixin column {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 @mixin paragraphStyles {
-    p{
+  p {
     margin: 3rem 0;
-    }
+  }
 }
 
 @mixin listStyles {
-    ul, ol {
-        margin-left: 3rem;
-        li {
-          margin: 1.5rem;
-        }
-      }
+  ul,
+  ol {
+    margin-left: 3rem;
+    li {
+      margin: 1.5rem;
+    }
+  }
 }
 
 @mixin titleStyles {
-    font-family: $title-font;
-    font-weight: 500;
-    height: 100%;
-    letter-spacing: $title-letter-spacing;
-    font-variant: small-caps;
-    margin-top: .5rem;
-    margin-bottom: 1rem;
+  font-family: $title-font;
+  font-weight: 500;
+  height: 100%;
+  letter-spacing: $title-letter-spacing;
+  font-variant: small-caps;
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
 }
-/*
-okay think of mixin names, 
-and surely for this to make sense 
-you wanna use them more than once, yeah?
 
-*/

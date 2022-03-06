@@ -33,7 +33,7 @@ let quotesCarouselNavContent = () => {
   let content = "";
   QUOTES.forEach(
     (val, i) =>
-      (content += `<span style="cursor:pointer;" id="quote-carousel-nav-link-${i}" class="quote-carousel-nav-link quote-carousel-nav-link-inactive">•</span>`)
+      (content += `<span style="cursor:pointer;" id="quote-carousel-nav-link---{i}" class="quote-carousel-nav-link quote-carousel-nav-link-inactive">•</span>`)
   );
   return content;
 };

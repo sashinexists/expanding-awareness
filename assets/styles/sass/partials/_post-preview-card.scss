@@ -2,7 +2,7 @@ a.post-preview-card {
     margin:0rem;
     padding:3rem;
     margin-bottom: 10rem;
-    color: black;
+    color: var(--text-color);
     display: block;
     border-radius: 1rem;
     cursor:pointer;
@@ -22,13 +22,12 @@ a.post-preview-card {
         justify-content: center;
         text-align: center;
         transition: 0.3s;
-        box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
-          rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+        @include box-shadow-standard;
       }
 
     .post-preview-card_copy {
         padding-bottom: 2rem;
-        border-bottom: solid 0.025rem $border-color;
+        border-bottom: solid 0.025rem var(--border-color);
 
         .post-preview-card_copy_title {
             font-size: $card-title-font-size;
@@ -50,6 +49,7 @@ a.post-preview-card {
         height: 5rem;
         width: 100%;
         button.post-preview-card_metadata_read-more {
+            color: var(--text-color);
             border: none;
             background: none;
             font-family: $title-font;
@@ -96,15 +96,15 @@ a.post-preview-card {
 
     &:hover {
         text-decoration: none;
-        color: black;
+        color: var(--text-color);
         transition:  all .6s;
-        box-shadow: rgba(0, 0, 0, 0.125) 0px 25px 50px -12px;
-        background: rgba(248,248,255, 0.3);
+        @include box-shadow-emphasised;
+        background: var(--snippet-bg-color);
         button.post-preview-card_metadata_read-more {
             letter-spacing: .7rem;
             transition:  all .6s;
             &:hover {
-                color: $link-hover-color;
+                color: var(--link-hover-color);
             }
 
         }

@@ -17,26 +17,24 @@ article img {
   img,
   iframe {
     border-radius: 1rem;
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
-      rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+    @include box-shadow-standard
   }
 }
 
 .kg-tweet-card {
   border-radius: 1rem;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
-    rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+  @include box-shadow-standard;
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
   justify-content: center;
   padding:1rem;
   margin: 3rem 0 4rem 0;
-  background: $snippet-bg-colour;
+  background: var(--snippet-bg-color);
   .fa-twitter {
     margin-top: 2rem;
     font-size: 5rem;
-    color: $text-color;
+    color: var(--text-color);
     opacity: 0.15;
   }
   .twitter-tweet {
@@ -139,17 +137,16 @@ footer {
 .kg-bookmark-card {
     display: flex;
     text-decoration: none;
-    background: $snippet-bg-colour;
+    background: var(--snippet-bg-color);
     overflow: hidden;
     color: inherit;
     border-radius: 1rem;
     width: 100%;
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
-    rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+    @include box-shadow-standard;
     &:hover {
       transition:  all .6s;
-      box-shadow: rgba(0, 0, 0, 0.125) 0px 25px 50px -12px;
-      background: rgba(248,248,255, 0.5);
+      @include box-shadow-emphasised;
+      background: var(--snippet-bg-color-hover);
     }
 }
 

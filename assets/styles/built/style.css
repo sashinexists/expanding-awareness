@@ -1,11 +1,100 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400&family=Hind+Madurai:wght@300;400&display=swap");
-/*
-okay think of mixin names, 
-and surely for this to make sense 
-you wanna use them more than once, yeah?
+:root {
+  --text-color: black;
+  --text-color-light: #ECF8FE;
+  --link-color: #0B72A3;
+  --link-hover-color: #0F94D2;
+  --title-color: #054261;
+  --bg-color: white;
+  --content-bg-color: white;
+  --snippet-title-color: #0B72A3;
+  --snippet-bg-color: ghostwhite;
+  --snippet-bg-color-hover: rgba(248, 248, 255, 0.5);
+  --border-color: rgba(0, 0, 0, 0.75);
+  --btn-bg-color: #e9e9f0;
+  --btn-text-color: black;
+  --btn-hover-bg-color: #e9e9f0;
+  --btn-hover-text-color: #e9e9f0;
+  --btn-bg-color: #e9e9f0;
+  --theme-toggle-btn-text-color: black;
+  --theme-toggle-btn-bg-color: #e9e9f0;
+  --theme-toggle-btn-hover-bg-color: #221B1F;
+  --theme-toggle-btn-hover-text-color: #F6F4F5;
+  --box-shadow-standard-color-1: rgba(0, 0, 0, 0.1);
+  --box-shadow-standard-color-2: rgba(0, 0, 0, 0.06);
+  --box-shadow-emphasised-color: rgba(0, 0, 0, 0.125);
+}
 
-*/
+body.light-mode {
+  --text-color: black;
+  --text-color-light: #ECF8FE;
+  --link-color: #0B72A3;
+  --link-hover-color: #0F94D2;
+  --title-color: #054261;
+  --bg-color: white;
+  --content-bg-color: white;
+  --snippet-title-color: #0B72A3;
+  --snippet-bg-color: ghostwhite;
+  --snippet-bg-color-hover: rgba(248, 248, 255, 0.5);
+  --border-color: rgba(0, 0, 0, 0.75);
+  --btn-bg-color: #e9e9f0;
+  --btn-text-color: black;
+  --btn-hover-bg-color: #e9e9f0;
+  --btn-hover-text-color: #e9e9f0;
+  --btn-bg-color: #e9e9f0;
+  --theme-toggle-btn-text-color: black;
+  --theme-toggle-btn-bg-color: #e9e9f0;
+  --theme-toggle-btn-hover-bg-color: #221B1F;
+  --theme-toggle-btn-hover-text-color: #F6F4F5;
+  --box-shadow-standard-color-1: rgba(0, 0, 0, 0.1);
+  --box-shadow-standard-color-2: rgba(0, 0, 0, 0.06);
+  --box-shadow-emphasised-color: rgba(0, 0, 0, 0.125);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --text-color: #F6F4F5;
+    --text-color-light: #fce6da;
+    --link-color: #ea671d;
+    --link-hover-color: #f6b28e;
+    --title-color: #f9ccb4;
+    --bg-color: #0c090b;
+    --content-bg-color: black;
+    --snippet-title-color: #aa440e;
+    --snippet-bg-color: #171215;
+    --snippet-bg-color-hover: #221B1F;
+    --border-color: rgba(255, 255, 255, 0.75);
+    --theme-toggle-btn-text-color: #F6F4F5;
+    --theme-toggle-btn-bg-color: #2D2429;
+    --theme-toggle-btn-hover-bg-color: #F6F4F5;
+    --theme-toggle-btn-hover-text-color: #221B1F;
+    --box-shadow-standard-color-1: rgba(0, 0, 0, 0.1);
+    --box-shadow-standard-color-2: rgba(0, 0, 0, 0.06);
+    --box-shadow-emphasised-color: rgba(0, 0, 0, 0.125);
+  }
+}
+body.dark-mode {
+  --text-color: #F6F4F5;
+  --text-color-light: #fce6da;
+  --link-color: #ea671d;
+  --link-hover-color: #f6b28e;
+  --title-color: #f9ccb4;
+  --bg-color: #0c090b;
+  --content-bg-color: black;
+  --snippet-title-color: #aa440e;
+  --snippet-bg-color: #171215;
+  --snippet-bg-color-hover: #221B1F;
+  --border-color: rgba(255, 255, 255, 0.75);
+  --theme-toggle-btn-text-color: #F6F4F5;
+  --theme-toggle-btn-bg-color: #2D2429;
+  --theme-toggle-btn-hover-bg-color: #F6F4F5;
+  --theme-toggle-btn-hover-text-color: #221B1F;
+  --box-shadow-standard-color-1: rgba(0, 0, 0, 0.1);
+  --box-shadow-standard-color-2: rgba(0, 0, 0, 0.06);
+  --box-shadow-emphasised-color: rgba(0, 0, 0, 0.125);
+}
+
 .content {
   width: 70%;
   margin: 0 auto;
@@ -26,24 +115,24 @@ article img {
 .kg-card img,
 .kg-card iframe {
   border-radius: 1rem;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+  box-shadow: var(--box-shadow-standard-color-1) 0px 4px 6px -1px, var(--box-shadow-standard-color-2) 0px 2px 4px -1px;
 }
 
 .kg-tweet-card {
   border-radius: 1rem;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+  box-shadow: var(--box-shadow-standard-color-1) 0px 4px 6px -1px, var(--box-shadow-standard-color-2) 0px 2px 4px -1px;
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
   justify-content: center;
   padding: 1rem;
   margin: 3rem 0 4rem 0;
-  background: ghostwhite;
+  background: var(--snippet-bg-color);
 }
 .kg-tweet-card .fa-twitter {
   margin-top: 2rem;
   font-size: 5rem;
-  color: black;
+  color: var(--text-color);
   opacity: 0.15;
 }
 .kg-tweet-card .twitter-tweet {
@@ -146,18 +235,18 @@ footer {
 .kg-bookmark-card {
   display: flex;
   text-decoration: none;
-  background: ghostwhite;
+  background: var(--snippet-bg-color);
   overflow: hidden;
   color: inherit;
   border-radius: 1rem;
   width: 100%;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+  box-shadow: var(--box-shadow-standard-color-1) 0px 4px 6px -1px, var(--box-shadow-standard-color-2) 0px 2px 4px -1px;
 }
 .kg-bookmark-card a.kg-bookmark-container:hover,
 .kg-bookmark-card:hover {
   transition: all 0.6s;
-  box-shadow: rgba(0, 0, 0, 0.125) 0px 25px 50px -12px;
-  background: rgba(248, 248, 255, 0.5);
+  box-shadow: var(--box-shadow-emphasised-color) 0px 25px 50px -12px;
+  background: var(--snippet-bg-color-hover);
 }
 
 .kg-bookmark-content {
@@ -294,14 +383,14 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: white;
+  background: var(--bg-color);
 }
 body a {
-  color: #0B72A3;
+  color: var(--link-color);
   text-decoration: none;
 }
 body a:hover {
-  color: #0F94D2;
+  color: var(--link-hover-color);
   text-decoration: underline;
 }
 body .text-align-center {
@@ -310,10 +399,12 @@ body .text-align-center {
 body p {
   margin: 3rem 0;
 }
-body ul, body ol {
+body ul,
+body ol {
   margin-left: 3rem;
 }
-body ul li, body ol li {
+body ul li,
+body ol li {
   margin: 1.5rem;
 }
 
@@ -368,14 +459,29 @@ h1 {
   flex-flow: row nowrap;
   align-items: center;
   justify-content: space-between;
-  background: white;
-  color: black;
+  background: var(--bg-color);
+  color: var(--text-color);
   padding: 0 3rem;
   z-index: 1;
   position: absolute;
   top: 0;
   left: 0;
-  border-bottom: solid 0.025rem rgba(0, 0, 0, 0.75);
+  border-bottom: solid 0.025rem var(--border-color);
+}
+.header button.theme-toggle-btn {
+  font-size: 2.4rem;
+  color: var(--theme-toggle-btn-text-color);
+  cursor: pointer;
+  height: 5rem;
+  width: 5rem;
+  border: none;
+  border-radius: 1rem;
+  background-color: var(--theme-toggle-btn-bg-color);
+}
+.header button.theme-toggle-btn:hover {
+  transition: 0.3s all;
+  color: var(--theme-toggle-btn-hover-text-color);
+  background: var(--theme-toggle-btn-hover-bg-color);
 }
 
 .logo {
@@ -395,7 +501,7 @@ h1 {
 .logo:hover {
   letter-spacing: 0.7rem;
   transition: 0.3s all;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.75);
+  border-bottom: 1px solid var(--border-color);
 }
 
 .logo-link {
@@ -453,7 +559,7 @@ h1 {
   align-items: center;
   justify-content: center;
   padding: 0 2rem;
-  color: black;
+  color: var(--text-color);
   text-decoration: none;
   height: 100%;
   width: 100%;
@@ -465,11 +571,11 @@ h1 {
   letter-spacing: 0.3rem;
   transition: 0.3s all;
   font-weight: bold;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.75);
+  border-bottom: 1px solid var(--border-color);
 }
 
 .content-card {
-  color: black;
+  color: var(--text-color);
   padding: 5rem;
   border-radius: 1rem;
   width: 100rem;
@@ -497,10 +603,14 @@ h1 {
 .content-card ul, .content-card ol {
   margin-bottom: 3rem;
 }
-.content-card ul ul, .content-card ul ol, .content-card ol ul, .content-card ol ol {
+.content-card ul ul,
+.content-card ul ol, .content-card ol ul,
+.content-card ol ol {
   margin-left: 3rem;
 }
-.content-card ul ul li, .content-card ul ol li, .content-card ol ul li, .content-card ol ol li {
+.content-card ul ul li,
+.content-card ul ol li, .content-card ol ul li,
+.content-card ol ol li {
   margin: 1.5rem;
 }
 .content-card blockquote {
@@ -531,7 +641,7 @@ h1 {
   margin-bottom: 1rem;
   margin-top: 1rem;
   font-size: 2.4rem;
-  color: #0B72A3;
+  color: var(--title-color);
 }
 .content-card h2, .content-card .recommended .recommended-title, .recommended .content-card .recommended-title {
   font-family: "Raleway";
@@ -560,27 +670,27 @@ h1 {
 .content-card .callout-box {
   margin-top: 2rem;
   margin-bottom: 6rem;
-  background-color: ghostwhite;
+  background-color: var(--snippet-bg-color);
   padding: 3rem;
   border-radius: 1rem;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+  box-shadow: var(--box-shadow-standard-color-1) 0px 4px 6px -1px, var(--box-shadow-standard-color-2) 0px 2px 4px -1px;
 }
 .content-card .callout-box h3 {
   text-align: center;
   font-size: 2rem;
-  color: #0B72A3;
+  color: var(--snippet-title-color);
   font-weight: bold;
 }
 .content-card .recommended-snippet {
   margin-top: 6rem;
-  background-color: rgba(252, 230, 218, 0.7);
+  background-color: var(--recommended-snippet-bg-color);
   padding: 3rem;
   border-radius: 1rem;
 }
 .content-card .recommended-snippet h3.recommended-snippet_title {
   text-align: center;
   font-size: 2rem;
-  color: #aa440e;
+  color: var(--recommended-snippet-title-color);
   font-weight: bold;
 }
 .content-card blockquote.quote-snippet {
@@ -612,7 +722,7 @@ h1 {
   flex-flow: column nowrap;
   align-items: baseline;
   justify-content: left;
-  border-left: 2px solid black;
+  border-left: 2px solid var(--border-color);
   text-align: left;
   margin-left: 5rem;
   margin-top: 3rem;
@@ -641,7 +751,7 @@ h1 {
   display: flex;
   flex-flow: column nowrap;
   transition: 0.3s;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+  box-shadow: var(--box-shadow-standard-color-1) 0px 4px 6px -1px, var(--box-shadow-standard-color-2) 0px 2px 4px -1px;
 }
 .content-card .page-image {
   height: 30rem;
@@ -682,7 +792,7 @@ a.post-preview-card {
   margin: 0rem;
   padding: 3rem;
   margin-bottom: 10rem;
-  color: black;
+  color: var(--text-color);
   display: block;
   border-radius: 1rem;
   cursor: pointer;
@@ -703,11 +813,11 @@ a.post-preview-card .post-preview-card_image {
   justify-content: center;
   text-align: center;
   transition: 0.3s;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+  box-shadow: var(--box-shadow-standard-color-1) 0px 4px 6px -1px, var(--box-shadow-standard-color-2) 0px 2px 4px -1px;
 }
 a.post-preview-card .post-preview-card_copy {
   padding-bottom: 2rem;
-  border-bottom: solid 0.025rem rgba(0, 0, 0, 0.75);
+  border-bottom: solid 0.025rem var(--border-color);
 }
 a.post-preview-card .post-preview-card_copy .post-preview-card_copy_title {
   font-size: 3rem;
@@ -728,6 +838,7 @@ a.post-preview-card .post-preview-card_metadata {
   width: 100%;
 }
 a.post-preview-card .post-preview-card_metadata button.post-preview-card_metadata_read-more {
+  color: var(--text-color);
   border: none;
   background: none;
   font-family: "Raleway";
@@ -770,17 +881,17 @@ a.post-preview-card .post-preview-card_metadata .post-preview-card_metadata_read
 }
 a.post-preview-card:hover {
   text-decoration: none;
-  color: black;
+  color: var(--text-color);
   transition: all 0.6s;
-  box-shadow: rgba(0, 0, 0, 0.125) 0px 25px 50px -12px;
-  background: rgba(248, 248, 255, 0.3);
+  box-shadow: var(--box-shadow-emphasised-color) 0px 25px 50px -12px;
+  background: var(--snippet-bg-color);
 }
 a.post-preview-card:hover button.post-preview-card_metadata_read-more {
   letter-spacing: 0.7rem;
   transition: all 0.6s;
 }
 a.post-preview-card:hover button.post-preview-card_metadata_read-more:hover {
-  color: #0F94D2;
+  color: var(--link-hover-color);
 }
 
 .desktop-only {

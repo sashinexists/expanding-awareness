@@ -15,7 +15,7 @@
     &:hover {
         letter-spacing: .7rem;
         transition: .3s all;
-        border-bottom: 1px solid $border-color;
+        border-bottom: 1px solid var(--border-color);
       }
 }
 

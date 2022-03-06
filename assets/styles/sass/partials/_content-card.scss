@@ -1,5 +1,5 @@
 .content-card {
-  color: $text-color;
+  color: var(--text-color);
   padding: 5rem;
   border-radius: 1rem;
   width: 100rem;
@@ -52,7 +52,7 @@
     @include titleStyles();
     margin-top: 1rem;
     font-size: $h3-font-size;
-    color: $link-color;
+    color: var(--title-color);
   }
 
   h2 {
@@ -73,27 +73,26 @@
     h3 {
       text-align: center;
       font-size: 2rem;
-      color: $snippet-title-colour;
+      color: var(--snippet-title-color);
       font-weight: bold;
     }
     margin-top: 2rem;
     margin-bottom: 6rem;
-    background-color: $snippet-bg-colour;
+    background-color: var(--snippet-bg-color);
     padding: 3rem;
     border-radius: 1rem;
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
-    rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+    @include box-shadow-standard
   }
 
   .recommended-snippet {
     h3.recommended-snippet_title {
       text-align: center;
       font-size: 2rem;
-      color: $recommended-snippet-title-colour;
+      color: var(--recommended-snippet-title-color);
       font-weight: bold;
     }
     margin-top: 6rem;
-    background-color: $recommended-snippet-bg-colour;
+    background-color: var(--recommended-snippet-bg-color);
     padding: 3rem;
     border-radius: 1rem;
   }
@@ -132,7 +131,7 @@
     flex-flow: column nowrap;
     align-items: baseline;
     justify-content: left;
-    border-left: 2px solid black;
+    border-left: 2px solid var(--border-color);
     text-align: left;
     margin-left: 5rem;
     margin-top: 3rem;
@@ -166,8 +165,7 @@
     display: flex;
     flex-flow: column nowrap;
     transition: 0.3s;
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
-      rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+    @include box-shadow-standard
   }
 
   .page-image {
