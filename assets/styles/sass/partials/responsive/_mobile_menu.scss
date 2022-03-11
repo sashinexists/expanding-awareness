@@ -1,40 +1,70 @@
 .mobile-menu-button {
-    background: none;
-    border: none;
-    color: $cultured-white;
-    font-size: 2.5rem;
-    cursor: pointer;
-    transition: all .3s ease-in-out;
+    font-size: $h3-font-size;
+        color: var(--theme-toggle-btn-text-color);
+        cursor: pointer;
+        height: 5rem;
+        width: 5rem;
+        border: none;
+        border-radius: 1rem;
+        background-color: var(--theme-toggle-btn-bg-color);
+        margin:0 2rem;
+        &:hover {
+            transition: 0.3s all;
+            color: var(--theme-toggle-btn-hover-text-color);
+            background: var(--theme-toggle-btn-hover-bg-color);
+        }
 }
 
 .mobile-navigation {
+    --mobile-nav-bg-color-1: #{transparentize($snippet-bg-color, 0.0125)};
+    --mobile-nav-bg-color-2: #{transparentize($bg-color, 0.0125)};
+}
+
+.dark-mode {
+    .mobile-navigation{
+    --mobile-nav-bg-color-1: #{transparentize($dark__snippet-bg-color, 0.0125)};
+    --mobile-nav-bg-color-2: #{transparentize($dark__snippet-bg-color-hover, 0.0125)};
+    }
+}
+
+.light-mode {
+    .mobile-navigation{
+    --mobile-nav-bg-color-1: #{transparentize($snippet-bg-color, 0.0125)};
+    --mobile-nav-bg-color-2: #{transparentize($bg-color, 0.0125)};
+    }
+}
+
+.mobile-navigation {
+
     position: absolute;
     z-index: 2;
-    top:5rem;
+    top:10rem;
+    margin:0;
     display: flex;
     flex-flow: column nowrap;
-    background: transparentize($raisin-black, .125);
+    background: var(--mobile-nav-bg-color-1);
     width: 95%;
     border-radius: 0 0 1rem 1rem;
     text-align: center;
     transition: all .3s ease-in-out;
 
 
-    .nav:not(.social-media-nav) {
+    ul.nav:not(.social-media-nav) {
         display: flex;
         flex-flow: column nowrap;
         align-items: center;
         width: 100%;
-
+        margin: 0;
         li {
             width: 100%;
             text-align: center;
             height: 10rem;
+            margin:0;
 
             a {
                 display: block;
                 line-height: 10rem;
-
+                margin:0;
                 width: 100%;
                 text-align: center;
                 font-size: 1.8rem;
@@ -46,35 +76,8 @@
         }
 
         li:nth-child(even) {
-            background: transparentize($smokey-black, .125);
+            background: var(--mobile-nav-bg-color-2);
         }
     }
 
-    .social-media-nav {
-        display: flex;
-        flex-flow: row nowrap;
-        align-items: center;
-        width: 100%;
-        background: transparentize($black-coffee, .5);
-        border-radius: 0 0 1rem 1rem;
-
-
-        li{
-            background: none;
-            width: 100%;
-            text-align: center;
-            height: 10rem;
-            a {
-                display: block;
-                line-height: 10rem;
-                width: 100%;
-                text-align: center;
-                font-weight: 400;
-                margin:auto;
-                i {
-                    font-size: 2.5rem;
-                }
-            }
-        }
-    }
 }

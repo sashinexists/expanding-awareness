@@ -1,9 +1,95 @@
-.desktop-only {
+@media only screen and (min-width: 1024px) {
+  .desktop-only {
     visibility: visible;
     display: inherit;
-}
+  }
 
-.mobile-only {
+  .mobile-only,
+  .mobile-and-tablet {
     visibility: hidden;
     display: none;
+  }
+
+  @media only screen and (min-width: 768px) and (max-width: 1024px) {
+    html {
+      font-size: 8.5px;
+    }
+
+    * {
+      max-width: 100vw;
+    }
+
+    .nav > li > a {
+      font-weight: 500;
+      //font-size:1rem;
+    }
+
+    .nav {
+      display: flex;
+      flex-flow: row;
+    }
+
+    .content-card {
+      max-width: 95vw;
+    }
+
+    .desktop-only,
+    .hide-tablet {
+      visibility: visible;
+      display: inherit;
+    }
+
+    .tablet-only,
+    .mobile-and-tablet {
+      visibility: hidden;
+      display: none;
+    }
+
+    .author-card {
+      flex-flow: row nowrap;
+      align-items: stretch;
+      justify-content: space-between;
+      width: 95vw;
+      height: min-content;
+      padding: 3rem;
+
+      .author-card-image {
+        height: 7rem;
+        width: 7rem;
+        border-radius: 7rem;
+        margin-right: 0;
+        box-shadow: rgba(0, 0, 0, 0.3) 0px 2px 4px,
+          rgba(0, 0, 0, 0.22) 0px 5px 4px;
+      }
+
+      .author-card-copy {
+        width: 17.5rem;
+        text-align: left;
+      }
+
+      .author-card-read-more {
+        align-self: center;
+      }
+    }
+
+    .banner-content {
+      justify-content: space-between;
+      padding: 2rem;
+    }
+
+    .banner-title {
+      font-size: 3.6rem;
+      font-weight: 300;
+      text-align: center;
+      margin-top: 2rem;
+    }
+
+    .banner-excerpt {
+      max-width: 95vw;
+    }
+
+    .banner-meta {
+      padding: 0 2rem;
+    }
+  }
 }

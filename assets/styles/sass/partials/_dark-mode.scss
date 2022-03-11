@@ -18,6 +18,11 @@ $dark__snippet-bg-color: $smokey-black;
 $dark__snippet-bg-color-hover: $raisin-black;
 $dark__border-color: rgba(255, 255, 255, 0.75);
 
+$dark__btn-bg-color: rgb(53, 53, 56);
+$dark__btn-text-color: $text-color;
+$dark__btn-hover-bg-color: rgb(233, 233, 240);
+$dark__btn-hover-text-color: $link-hover-color;
+
 $dark__theme-toggle-btn-bg-color: $raisin-black-light;
 $dark__theme-toggle-btn-text-color: $dark__text-color;
 $dark__theme-toggle-btn-hover-bg-color: $cultured-white;
@@ -39,6 +44,7 @@ $dark__box-shadow-emphasised-color: $box-shadow-emphasised-color;
     --snippet-title-color: #{$dark__snippet-title-color};
     --snippet-bg-color: #{$dark__snippet-bg-color};
     --snippet-bg-color-hover: #{$dark__snippet-bg-color-hover};
+    --btn-bg-color: #{$dark__btn-bg-color};
     --border-color: #{$dark__border-color};
     --theme-toggle-btn-text-color: #{$dark__theme-toggle-btn-text-color};
     --theme-toggle-btn-bg-color: #{$dark__theme-toggle-btn-bg-color};
@@ -69,4 +75,34 @@ body.dark-mode {
     --box-shadow-standard-color-1: #{$dark__box-shadow-standard-color-1};
     --box-shadow-standard-color-2: #{$dark__box-shadow-standard-color-2};
     --box-shadow-emphasised-color: #{$dark__box-shadow-emphasised-color};
+}
+
+.dark-mode {
+  .formkit-form {
+    box-shadow: none !important;
+    background: none !important;
+    border-radius: 1rem;
+  .formkit-column, .formkit-background {
+    background: var(--snippet-bg-color) !important;
+    color: var(--text-color) !important;
+    border: none!important;
+    button.formkit-submit {
+      background: var(--btn-bg-color)!important;
+    }
+    p {
+      color: var(--text-color)!important;
+    }
+    .formkit-header {
+      h2 {
+        color: var(--text-color);
+      }
+    }
+    .formkit-field {
+      input {
+        background: var(--bg-color);
+        color: var(--text-color)!important;
+        border: none;
+      }
+    }
+  }}
 }

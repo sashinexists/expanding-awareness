@@ -30,4 +30,9 @@
             background: var(--theme-toggle-btn-hover-bg-color);
         }
     }
+
+    .header-right {
+        display: flex;
+        flex-flow: row nowrap;
+    }
 }

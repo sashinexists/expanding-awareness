@@ -1,4 +1,4 @@
-@media only screen and (min-width: 700px) and (max-width: 1200px) {
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
     html {
         font-size: 8.5px;
     }
@@ -20,6 +20,17 @@
     .content-card {
         max-width: 95vw;
     }
+
+    .desktop-only,
+    .hide-tablet {
+      visibility: hidden;
+      display: none;
+    }
+
+    .tablet-only, .mobile-and-tablet {
+        visibility: visible;
+        display: inherit;
+      }
 
 
     .author-card {
@@ -70,5 +81,9 @@
 
     .desktop-only {
         display: none;
+    }
+
+    .theme-toggle-btn {
+        justify-self:flex-end;
     }
 }

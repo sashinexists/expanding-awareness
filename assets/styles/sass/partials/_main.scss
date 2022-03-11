@@ -12,8 +12,8 @@ html {
 }
 
 body {
-@include defaultText();
-@include column();
+  @include defaultText();
+  @include column();
   background: var(--bg-color);
 
   a {
@@ -28,7 +28,7 @@ body {
   .text-align-center {
     text-align: center;
   }
-  
+
   @include paragraphStyles();
   @include listStyles();
 }
@@ -40,7 +40,12 @@ body {
 
 .mobile-only {
   display: none;
-  visibility: hidden;    
+  visibility: hidden;
+}
+
+.mobile-and-tablet {
+  display: none;
+  visibility: hidden;
 }
 
 .page-title {
@@ -56,5 +61,34 @@ h3 {
 h1 {
   @include titleStyles();
   font-size: $h1-font-size;
-
+}
+.formkit-form {
+  @include box-shadow-standard;
+  background: none !important;
+  border-radius: 1rem;
+  .formkit-column,
+  .formkit-background {
+    background: var(--snippet-bg-color) !important;
+    color: var(--text-color) !important;
+    border: none !important;
+    button.formkit-submit {
+      background: var(--btn-bg-color) !important;
+      color: var(--text-color) !important;
+    }
+    p {
+      color: var(--text-color) !important;
+    }
+    .formkit-header {
+      h2 {
+        color: var(--text-color);
+      }
+    }
+    .formkit-field {
+      input {
+        background: var(--bg-color);
+        color: var(--text-color) !important;
+        border: none;
+      }
+    }
+  }
 }

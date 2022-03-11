@@ -9,7 +9,9 @@
     {{#if posts}}
     <div class="posts">
         {{#foreach posts}}
+         {{#has tag="#essay"}}
         {{> post-preview-card}}
+        {{/has}}
         {{/foreach}}
     </div>
     {{/if}}
