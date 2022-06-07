@@ -5,7 +5,13 @@
                 MMMM YYYY"}}</time>-->
   </div>
   {{#if feature_image}}
+  <figure class="kg-card kg-video-card kg-card-hascaption">
     <figure class="page-image" style="background-image: url({{feature_image}})">
+      
+    </figure>
+    {{#if feature_image_caption}}
+    <figcaption>{{feature_image_caption}}</figcaption>            
+      {{/if}}
     </figure>
   {{/if}}
   <div>{{content}}</div>

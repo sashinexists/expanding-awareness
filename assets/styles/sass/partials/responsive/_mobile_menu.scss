@@ -6,12 +6,11 @@
         width: 5rem;
         border: none;
         border-radius: 1rem;
-        background-color: var(--theme-toggle-btn-bg-color);
+        background-color: var(--btn-bg-color)!important;
         margin:0 2rem;
         &:hover {
             transition: 0.3s all;
-            color: var(--theme-toggle-btn-hover-text-color);
-            background: var(--theme-toggle-btn-hover-bg-color);
+            background: var(--btn-bg-hover-color)!important;
         }
 }
 

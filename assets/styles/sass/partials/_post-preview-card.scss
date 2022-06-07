@@ -1,7 +1,7 @@
 a.post-preview-card {
     margin:0rem;
     padding:3rem;
-    margin-bottom: 10rem;
+    margin-bottom: 5rem;
     color: var(--text-color);
     display: block;
     border-radius: 1rem;
@@ -31,12 +31,12 @@ a.post-preview-card {
 
         .post-preview-card_copy_title {
             font-size: $card-title-font-size;
-            margin-bottom:1rem;
+            margin-bottom:2rem;
             text-align: center;
             font-family: $title-font;
-            font-weight: 300;
+            font-weight: 500;
             font-variant: small-caps;
-            line-height: 7rem;
+            line-height: 4rem;
             letter-spacing: .4rem;
         }
     }

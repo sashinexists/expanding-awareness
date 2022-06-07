@@ -1,7 +1,7 @@
 .footer-button {
     padding: 0 1rem;
-    background: transparentize($cultured-white, 0.3);
-    color: $raisin-black;
+    background: var(--btn-bg-color);
+    color: var(--text-color);
     position: fixed;
     bottom: 1rem;
     border-radius: 1rem;
@@ -22,7 +22,8 @@
     width: 3.5rem;
     opacity: .3;
     display: block;
+    background: var(--btn-bg-color);
     &:hover {
-        background: $cultured-white;
+        background: var(--btn-bg-hover-color)!important;
     }
 }

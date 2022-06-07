@@ -13,15 +13,14 @@ $snippet-bg-color: rgb(248, 248, 255);
 $snippet-bg-color-hover: rgba(248, 248, 255, 0.5);
 $border-color: rgba(0, 0, 0, 0.75);
 $title-color: $indigo-dye;
-
-$btn-bg-color: rgb(233, 233, 240);
+$btn-bg-color: #eeeef7;
 $btn-text-color: $text-color;
-$btn-hover-bg-color: rgb(233, 233, 240);
+$btn-bg-hover-color: #f6f6fc;
 $btn-hover-text-color: $link-hover-color;
 
 $theme-toggle-btn-bg-color: #e9e9f0;
 $theme-toggle-btn-text-color: $text-color;
-$theme-toggle-btn-hover-bg-color: $raisin-black;
+$theme-toggle-btn-bg-hover-color: $raisin-black;
 $theme-toggle-btn-hover-text-color: $cultured-white;
 
 
@@ -45,12 +44,12 @@ $box-shadow-emphasised-color: rgba(0, 0, 0, 0.125);
   --border-color: #{$border-color};
   --btn-bg-color: #{$btn-bg-color};
   --btn-text-color: #{$btn-text-color};
-  --btn-hover-bg-color: #{$btn-hover-bg-color};
-  --btn-hover-text-color: #{$btn-hover-bg-color};
+  --btn-bg-hover-color: #{$btn-bg-hover-color};
+  --btn-hover-text-color: #{$btn-bg-hover-color};
   --btn-bg-color: #{$btn-bg-color};
   --theme-toggle-btn-text-color: #{$theme-toggle-btn-text-color};
   --theme-toggle-btn-bg-color: #{$theme-toggle-btn-bg-color};
-  --theme-toggle-btn-hover-bg-color: #{$theme-toggle-btn-hover-bg-color};
+  --theme-toggle-btn-bg-hover-color: #{$theme-toggle-btn-bg-hover-color};
   --theme-toggle-btn-hover-text-color: #{$theme-toggle-btn-hover-text-color};
   --box-shadow-standard-color-1: #{$box-shadow-standard-color-1};
   --box-shadow-standard-color-2: #{$box-shadow-standard-color-2};
@@ -72,12 +71,12 @@ body.light-mode {
   --border-color: #{$border-color};
   --btn-bg-color: #{$btn-bg-color};
   --btn-text-color: #{$btn-text-color};
-  --btn-hover-bg-color: #{$btn-hover-bg-color};
-  --btn-hover-text-color: #{$btn-hover-bg-color};
+  --btn-bg-hover-color: #{$btn-bg-hover-color};
+  --btn-hover-text-color: #{$btn-bg-hover-color};
   --btn-bg-color: #{$btn-bg-color};
   --theme-toggle-btn-text-color: #{$theme-toggle-btn-text-color};
   --theme-toggle-btn-bg-color: #{$theme-toggle-btn-bg-color};
-  --theme-toggle-btn-hover-bg-color: #{$theme-toggle-btn-hover-bg-color};
+  --theme-toggle-btn-bg-hover-color: #{$theme-toggle-btn-bg-hover-color};
   --theme-toggle-btn-hover-text-color: #{$theme-toggle-btn-hover-text-color};
   --box-shadow-standard-color-1: #{$box-shadow-standard-color-1};
   --box-shadow-standard-color-2: #{$box-shadow-standard-color-2};
